@@ -23,48 +23,50 @@
         <h1>Nuovo libro</h1>
     </div>
 
-    <section class="ms-3">
+    <section class="ms-3 me-3">
         <form action="">
-            <div class="d-flex">
-                <label>Nome autore</label>
-                <input type="text">
+            <div class="d-inline-block">
+                <label class="form-label">Nome autore</label>
+                <input class="form-control" type="text">
 
 
-                <label>Cognome autore</label>
-                <input type="text">
+                <label class="form-label">Cognome autore</label>
+                <input class="form-control" type="text">
+            </div>
+
+            <div class="pt-3">
+                <label class="form-label">Titolo</label>
+                <input class="form-control" type="text">
             </div>
 
             <div>
-                <label>Titolo</label>
-                <input type="text">
+                <div class="pt-3">
+                    <label class="form-label">Genere</label>
+                    <select class="form-control" name="gender" id="gender">
+                        <option value="maschio">Maschio</option>
+                        <option value="femmina">Femmina</option>
+                    </select>
+                </div>
+    
+                <div>
+                    <label class="form-label pt-4">Anno di Pubblicazione</label>
+                    <input class="form-control" type="date">
+                </div>
+    
+                <div class="pt-3">
+                    <label class="form-label">ISBN#</label>
+                    <input class="form-control" type="number">
+                </div>
             </div>
 
-            <div>
-                <label>Genere</label>
-                <select name="gender" id="gender">
-                    <option value="maschio">Maschio</option>
-                    <option value="femmina">Femmina</option>
-                </select>
+            <hr>
+
+            <div class="pt-2">
+                <label class="form-label">Note</label>
+                <textarea class="form-control" name="textarea" id="textarea"></textarea>
             </div>
 
-            <div>
-                <label>Anno di Pubblicazione</label>
-                <input type="date">
-            </div>
-
-            <div>
-                <label>ISBN#</label>
-                <input type="number">
-            </div>
-
-            <hr class="pb-3">
-
-            <div>
-                <label>Note</label>
-                <textarea name="textarea" id="textarea"></textarea>
-            </div>
-
-            <div>
+            <div class="d-flex pt-2 pb-2">
                 <input type="checkbox">
                 <p>Disponibile anche in digitale</p>
             </div>
