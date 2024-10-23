@@ -25,13 +25,16 @@
 
     <section class="ms-3 me-3">
         <form action="">
-            <div class="d-inline-block">
-                <label class="form-label">Nome autore</label>
-                <input class="form-control" type="text">
-
-
-                <label class="form-label">Cognome autore</label>
-                <input class="form-control" type="text">
+            <div class="row d-flex justify-content-between">
+                <div class="col-6">
+                    <label class="form-label">Nome autore</label>
+                    <input class="form-control" type="text">
+                </div>
+    
+                <div class="col-6">
+                    <label class="form-label">Cognome autore</label>
+                    <input class="form-control" type="text">
+                </div>
             </div>
 
             <div class="pt-3">
@@ -39,8 +42,8 @@
                 <input class="form-control" type="text">
             </div>
 
-            <div>
-                <div class="pt-3">
+            <div class="pb-3 row d-flex justify-content-between">
+                <div class="pt-4 col-lg-4">
                     <label class="form-label">Genere</label>
                     <select class="form-control" name="gender" id="gender">
                         <option value="maschio">Maschio</option>
@@ -48,12 +51,12 @@
                     </select>
                 </div>
     
-                <div>
+                <div class="col-lg-4">
                     <label class="form-label pt-4">Anno di Pubblicazione</label>
                     <input class="form-control" type="date">
                 </div>
     
-                <div class="pt-3">
+                <div class="pt-4 col-lg-4">
                     <label class="form-label">ISBN#</label>
                     <input class="form-control" type="number">
                 </div>
@@ -66,9 +69,9 @@
                 <textarea class="form-control" name="textarea" id="textarea"></textarea>
             </div>
 
-            <div class="d-flex pt-2 pb-2">
+            <div class="d-flex pt-3 pb-3">
                 <input type="checkbox">
-                <p>Disponibile anche in digitale</p>
+                <label class="ps-2">Disponibile anche in digitale</label>
             </div>
 
             <a href="./index.html"><button class="btn btn-primary">Aggiungi Libro</button></a>
